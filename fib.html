@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1 id="out">0</h1>
+    <button id="click" >RUN THAT FIBONACCI SEQUENCE</button>
+    <script>
+        let click = document.querySelector('#click');
+        let out = document.querySelector('#out');
+        let a = 0;
+        let b = 1;
+        let c;
+            click.addEventListener('click', function(){
+                c = a + b;
+                out.textContent = c;
+                a = b; 
+                b = c;
+        });
+    </script>
+</body>
+</html>
